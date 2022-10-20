@@ -24,7 +24,6 @@ opts_knit$set(width=75)
 
 # Summary  
 
-This case study was completed by Isabella Peel in September 2021 as part of the Google Data Analytics Professional Certificate capstone unit. R has been used to complete this case study and then hosted online through git. Each tab at the top of this website documents the steps taken to complete this case study. 
 
 # Case Study Brief
 
