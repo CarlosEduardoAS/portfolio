@@ -182,11 +182,10 @@
    
 <!-- Don't indent these lines or it will mess pre blocks indentation --> 
 <div class="page-content has-page-title">
-
+<div id="estudo-de-caso-cyclistic" class="section level1">
 <h1>Estudo de caso Cyclistic</h1>
 <p class="authors">
   <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2022-10-17</p>
-<div id="introduction" class="section level3">
 <h3>1. Introdução</h3>
 <p>Established in 2016, Cyclistic is a bike-share offering service located in Chicago, USA. Cyclistic currently offers more than 5,800 bicycles that are geo-tracked and locked into a network of over 690 stations across Chicago. The bikes can be unlocked from one station and returned to another station in the system anytime.</p>
 <p>As of August 2021, Cyclistic offers the following pricing plans (USD):</p>
@@ -196,16 +195,16 @@
 <li>Annual memberships, $9/month</li>
 </ul>
 <p>The Cyclistic team have recently concluded that annual memberships are more profitable than casual riders. Furthermore, the team have noted that while 30% of users use the bikes for their work commute, the majority of Cyclistic users ride for leisure. This report will assess how existing Cyclistic causal riders can be encouraged to convert to annual memberships.</p>
-</div>
-<div id="process" class="section level1">
+
+
 <h1>2. Process</h1>
 <p>Cyclistic have provided historical trip data to be analysed. For the purpose of this analysis, only data between August 2020 and July 2021 will be assessed. The data has already been processed to remove trips that were below 60 seconds in length (potentially false starts or users trying to re-dock a bike to ensure it was secure). The license to use this dataset can be located <a href="https://www.divvybikes.com/data-license-agreement">here.</a></p>
 <p>There are around 100,000 - 500,000 entries for each month saved under their own MS Excel CSV. Due to the large file sizes, R has been used to clean and process the large datasets. There is minimal human error and data bias since the primary, structured, historical data is taken from the bikes themselves. However, due to data privacy rules, there is no data relating to the type of user.</p>
 <p>The data has been cleaned by way of merging all 12 datasets into one, deleting incomplete data elements, removing test station results, removing negative ride lengths and summarising the dataset by date and time variables. The full data cleaning process has been documented in “Data Cleaning Process”.</p>
 <p>The data cleaning process highlighted that the “classic” bike type was added to Cyclistic’s portfolio from December 2020 onwards and that there are a few stations which have been added and/or removed from Cyclistic’s portfolio during the analysis time frame.</p>
 <p>The cleaned dataset has been saved under the file name “all_trips_cleaned”.</p>
-</div>
-<div id="analysis" class="section level1">
+
+
 <h1>3. Analysis</h1>
 <div id="most-popular-stations" class="section level3">
 <h3>3.1 Most popular stations</h3>
@@ -239,8 +238,8 @@
 <p>Colloquially referred to as the “windy city”, wind speed was less of a deterrent to Cyclistic users in comparison to precipitation, whereby the very smallest chance of rain deterred both casual and member riders. The exponential increase in casual riders due to a higher average daily temperature in comparison to a more linear trend for members suggests that members are using the bikes more consistently rather than casual riders.</p>
 <p>With an average temperature of 71F, an average precipitation level of 0.1 inches and an average wind speed of 9.993mph, Saturday 17th July 2021 was Cyclistic’s most popular day with 31,887 trips occurring. In contrast, Tuesday 16th February 2021 was Cyclistic’s least popular day with 221 trips occurring on a day with an average temperature of 12F, an average precipitation level of 0.45 inches and an average wind speed of 10.07mph.</p>
 </div>
-</div>
-<div id="recommendations" class="section level1">
+
+
 <h1>4. Recommendations</h1>
 <p>As identified in the client brief, the marketing recommendations concluded from the insights of this case study should not be focused on encouraging new customers to use the Cyclistic bike service but instead focus on encouraging casual riders to convert to annual memberships.</p>
 <p>The three possible marketing recommendations for Cyclistic are as follows:</p>
@@ -250,6 +249,7 @@
 <p>Similar to the insight noted in recommendation 1, for Chicago locals to choose to invest in an annual membership rather than regularly purchasing casual trips with Cyclistic, phone notifications and email reminders should be used to remind regular casual riders (most likely Chicago locals) of the long term pricing benefit from investing in an annual membership rather than purchasing regular casual trips.</p>
 <p><strong><em>3. Digital campaign showing the benefits of using a Cyclistic bike in a post-COVID-19 society</em></strong></p>
 <p>Section 3.2 concluded that there has been an increase in members using the bike service post the COVID-19 Illinois stay at home order. This insight could be capitalized by Cyclistic whereby the benefits of riding bikes outdoors rather than being inside a vehicle with others, or inside a gym with poor airflow, should be highlighted.</p>
+
 </div>
 </div>
 
