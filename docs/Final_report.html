@@ -190,7 +190,7 @@
 <p>O serviço de bike-sharing possui dois tipos de usuários: membros anuais e casuais. O diretor de marketing acredita que o futuro sucesso da empresa depende de maximizar o número de membros anuais, e para isso, pediu uma análise de como os tipos de membros diferem no uso do serviço, além de recomendações de como transformar membros casuais em membros anuais</p>
 
 
-<h2>2. Process</h2>
+<h2>2. Processo</h2>
 <p>Cyclistic have provided historical trip data to be analysed. For the purpose of this analysis, only data between August 2020 and July 2021 will be assessed. The data has already been processed to remove trips that were below 60 seconds in length (potentially false starts or users trying to re-dock a bike to ensure it was secure). The license to use this dataset can be located <a href="https://www.divvybikes.com/data-license-agreement">here.</a></p>
 <p>There are around 100,000 - 500,000 entries for each month saved under their own MS Excel CSV. Due to the large file sizes, R has been used to clean and process the large datasets. There is minimal human error and data bias since the primary, structured, historical data is taken from the bikes themselves. However, due to data privacy rules, there is no data relating to the type of user.</p>
 <p>The data has been cleaned by way of merging all 12 datasets into one, deleting incomplete data elements, removing test station results, removing negative ride lengths and summarising the dataset by date and time variables. The full data cleaning process has been documented in “Data Cleaning Process”.</p>
