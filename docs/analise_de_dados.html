@@ -245,7 +245,7 @@
 
 <h2>2. Processo</h2>
 <p>O primeiro passo foi coletar os dados necessários. Para isso, criei um web scraper que coletou os links de todas as 986 vagas do Linkedin oferecidas na área de data science no Brasil recentemente (01/11/2022). Destes links, extraí todas as informações relevantes: título, nome da empresa, local, método de trabalho (remoto, presencial ou híbrido), data da publicação, jornada de trabalho (tempo integral, meio período e contrato) e descrição. Devido a algumas vagas não possuírem todas essas informações, das 986, apenas 828 foram armazenadas em um dataframe com o nome de "job_offers". O código completo para esta fase pode ser encontrado <a href="https://github.com/CarlosEduardoAS/analise-de-cargos-em-dados/blob/main/coleta.ipynb">aqui.</a></p>
-<p>Com isso, o próximo passo foi limpar e tratar devidamente esses dados. Observando o dataset, percebi que muitas vagas de outras áreas da tecnologia foram erroneamente incluídas no filtro "data science" no Linkedin, portanto, usei uma série de palavras chaves para filtrar todas as vagas que realmente eram da área. O número total de entradas foi de 828 pra 624.</p>
+<p>Com isso, o próximo passo foi limpar e tratar devidamente esses dados. Observando o dataset, percebi que muitas vagas de outras áreas da tecnologia foram erroneamente incluídas no filtro "data science" no Linkedin, portanto, usei uma série de palavras chaves para filtrar todas as vagas que realmente eram da área. O número total de entradas foi de 828 para 624.</p>
 <p>Tendo enfim um dataset limpo, pude inicar a fase de tratamento. Comecei por simplificar os títulos de cada vaga, sintetizando-os nas categorias: Analista BI, Analista de Dados, Engenheiro de Dados e Cientista de Dados, e para isso utilizei regex em python, além de mais uma vez palavras chave. Após isso, usei esta mesma abordagem para extrair as informações mais relevantes das descrições de cada vaga, como o nível de educação formal e os conhecimento sobre tecnologias requeridos ou preferidos. Por fim, simplifiquei da mesma maneira que os títulos as jornadas de trabalho e os locais das empresas, retirei as colunas cujas informações já não eram mais necessárias e salvei o dataset limpo sob o nome de "clean_job_offers". O código completo para esta fase da análise pode ser encontrado <a href="https://github.com/CarlosEduardoAS/analise-de-cargos-em-dados/blob/main/limpeza.ipynb">aqui.</a></p>
 
 
@@ -254,7 +254,10 @@
 
 <h3>3.1 Geral</h3>
 <p><img src="Final_report_files/figure-html/analise_geral.png" width="768" /></p>
-<p></p>
+<p>Observando os gráficos, notam-se alguns padrões que se repetirão pela maioria dos cargos. Em relação aos métodos de trabalho, remoto e presencial possuem uma distribuição bem balanceada, com o primeiro liderando por 4 pontos percentuais, enquanto o método híbrido, com apenas 26% do todo, demonstra uma baixa adesão.</p>
+<p>Quanto aos níveis de educação formal requeridos ou preferidos, nota-se que mais da metade das vagas não exigem diploma. Uma possível causa de tal resultado pode ser o fato de que o mercado de dados ainda é muito novo, e poucas graduações na área existem nas universidades. Além disso, existe também a tendência geral do mercado tech de dar pouca importância a diplomas universitários e mais à habilidades técnicas, comprovadas por meio de projetos pessoais ou certificações oferecidas por cursos online.</p>
+<p>Falando em habilidades, as três que mais se destacam como mais desejadas na área são Python, SQL e Power BI, todas presentes nos requisitos de mais da metade das vagas coletadas.</p>
+<p>Por fim, pode-se observar a expressiva diferença entre o número de vagas em São Paulo e o número de vagas em outros estados do Brasil. Isso deve-se, provavelmente, ao fato de São Paulo ser o centro financeiro do Brasil, com a maioria das grandes empresas sediadas neste estado.</p>
 
 <h3>3.2 Analista BI</h3>
 <p><img src="Final_report_files/figure-html/analise_analistaBI.png" width="768" /></p>
