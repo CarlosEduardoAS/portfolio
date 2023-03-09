@@ -303,7 +303,10 @@
 <p>Em seguida, carreguei estes arquivos em planilhas Excel e criei uma tabela dinâmica para cada uma, para visualizar melhor as relações potencialmente relevantes. Comecei analisando o total de calorias queimadas por cada um dos 33 usuários durante o período de 1 mês da coleta, e então transformei esta tabela dinâmica em uma comum, para realizar uma operação lógica de IFs aninhados com a finalidade de dividir os usuários em 3 categorias: não muito ativos, ativos e muito ativos. Com isso, retornei à planilha principal de atividades e utilizei a função XLOOKUP para mapear cada ID de usuário com sua devida categoria.</p>
 <p>Meu próximo passo foi criar outra nova coluna e preenchê-la com o nome do dia da semana de cada atividade registrada, usando uma combinação das funções TEXT e WEEKDAY, para poder analisar em quais dias os usuários costumam se exercitar mais.</p>
 <p>Feito isso, decidi realizar uma análise semelhante por horários dessa vez, usando a função HOUR nas planilhas adequadas.</p>
-<p>Por fim, apliquei a mesma técnica na planilha do sono </p>
+<p>Por fim, limpei os dados filtrando registros e colunas irrelevantes para as análises que pretendia realizar e os transferi para o Power BI, onde conectei as tabelas através do ID, com uma relação ManyToMany. Além disso, também utilizei a linguagem DAX para criar outra coluna dos dias da semana, dessa vez em formato númerico, para ordenar corretamente nos gráficos feitos.</p>
+
+<h2>3. Análise</h2>
+<p></p>
 </div>
 </div>
 
