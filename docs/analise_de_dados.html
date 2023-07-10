@@ -344,7 +344,14 @@
 <p>Google Fiber é um produto da Alphabet que fornece a pessoas e negócios internet fibra ótica. O objetivo desta análise é explorar tendências de ligações repetidas no setor de suporte ao cliente deste produto, para entender melhor o quão efetivo é o time em resolver os problemas e dúvidas dos clientes na primeira ligação, além de mapear um caminho para melhorar a experiência do mesmo como um todo.</p>
 
 <h2>2. Processo</h2>
-<p>Os dados para a análise foram disponibilizados na forma de três arquivos CSV, </p>
+<p>Os dados para a análise foram disponibilizados separadamente, na forma de três arquivos CSV, cada um com 450 linhas e 11 colunas. Tais dados já haviam sido anonimizados, e as informações inclusas são:</p>
+
+<li><strong><em>date_created: </em></strong>A data da criação de cada registro.</li>
+<li><strong><em>contacts_n: </em></strong>O número de primeiras ligações.</li>
+<li><strong><em>contacts_n_1 - contacts_n_7: </em></strong>O número de ligações feitas após n dias da primeira.</li>
+<li><strong><em>new_type: </em></strong>O tipo de problema abordado nas ligações.</li>
+<li><strong><em>new_market: </em></strong>Uma de três cidades, que representa o mercado de onde as ligações vieram. Cada arquivo CSV se refere a somente 1 das 3.</li>
+
 <p>Após baixar os arquivos CSV referentes aos 3 mercados diferentes, eu os juntei em uma só tabela usando um script SQL através da plataforma BigQuery. Assim, levei esta tabela ao Tableau e criei campos calculados para representar quantos por cento dos clientes que ligaram 1 vez precisaram ligar mais 1, 2, 3 ou até 7 vezes para resolver seus problemas.</p>
 
 <h2>3. Análise</h2>
