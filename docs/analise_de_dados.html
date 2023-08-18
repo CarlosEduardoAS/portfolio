@@ -435,7 +435,24 @@
 <p>Para isso, utilizei queries SQL através do BigQuery para extrair os dados necessários, Power Query para manipulá-los e Power BI para contruir o dashboard.</p>
 
 <h2>2. Processo</h2>
-<p></p>
+<p>Primeiro, baixei os dados no formato .xlsx, encontrados no site <a href="https://absentdata.com/data-analysis/where-to-find-data/">absentdata.com</a>, separei-os em planilhas individuais e os converti para o formato CSV.</p>
+
+<p>Feito isso, pude criar a base de dados e as tabelas no BigQuery, assim como as queries necessárias para a análise, que podem ser visualizadas <a href="https://github.com/CarlosEduardoAS/analise-de-uma-rede-de-hoteis/tree/main/SQL%20queries">aqui</a>.</p>
+
+<p>Partindo para o Power BI, criei uma conexão com o BigQuery e, usando Power Query, dei os toques finais à tabela, cujas colunas são:</p>
+
+<ul>
+  <li><strong><em>hotel: </em></strong> O tipo de hotel</li>
+  <li><strong><em>stays_in_weekend_nights: </em></strong> Número de noites durante o fim de semana</li>
+  <li><strong><em>stays_in_week_nights: </em></strong> Número de noites durante a semana</li>
+  <li><strong><em>country: </em></strong> País do hotel</li>
+  <li><strong><em>adr: </em></strong> Diária cobrada</li>
+  <li><strong><em>required_car_parking_spaces: </em></strong> Número de vagas utilizadas no estacionamento</li>
+  <li><strong><em>reservation_status_date: </em></strong> Data da reserva</li>
+  <li><strong><em>Discount: </em></strong> Desconto aplicado</li>
+  <li><strong><em>meal_cost: </em></strong> Preço cobrado pelas refeições</li>
+  <li><strong><em>revenue: </em></strong> Lucro total</li>
+</ul>
 
 <h2>3. Análise</h2>
 <p></p>
